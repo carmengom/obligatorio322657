@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+ --negro: rgb(15, 15, 15);
+ --blanco: white;
+ --rosado-jean: rgb(212, 154, 167);
+ --verde-john: rgb(82, 110, 75);
+ --tag-amarillo: rgb(194, 169, 57);
+ --tag-verde: rgb(17, 90, 14);
+ --tag-rosado: rgb(245, 45, 128);
+}
+
+h1, h2{
+        font-family: "Gilda Display", serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--negro);
+    padding: 1.5em;
+}
+
+#logo{
+    width: 80px;
+}
+
+header a{
+    display: inline-block;
+}
+
+nav{
+    display: none;
+    align-items: center;
+}
+
+#portada{
+    position: relative;
+    text-align: center;
+    background-image: url(img/grim3.webp);
+    background-size: cover;
+    padding: 16em 0em;
+    display: flex;
+    align-items: flex-end;
+}
+
+#portada h1{
+    color: var(--blanco);
+    font-weight: 200;
+}
+
+#portada h2{
+    font-size: 2em;
+    font-weight: 200;
+    color: var(--blanco);
+    font-family: "Inter", sans-serif;
+}
+
+.textos{
+    position: absolute;
+    bottom: 0;
+    margin: 2em;
+}
+
+.textos p{
+    display: none;
+    color: var(--blanco);
+    padding-right: 2em; 
+}
+
+form{
+    background-color: var(--negro);
+    border-radius: 50px;
+    text-align: center;
+    padding: 2em 1.5em 1em 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    justify-content: center;
+}
+
+form input, form select{
+    width: 15em;
+    padding: 0.5em 0.8em;
+    font-size: 1.2em;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+div.inputs{
+    max-width: 522px; 
+}
+
+form button{
+    display: inline-block;
+    color: var(--blanco);
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    border-radius: 10px;
+    padding: 1em 2em;
+    width: 100%;
+    transition: 0.3s;
+    max-width: 230px;
+}
+
+form button:hover{
+    background-color: var(--blanco);
+    color: black;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
+#dos h2{
+    color: var(--blanco);
+    margin-bottom: 1em;
+}
+
+#dos span{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#tres{
+    gap: 0.5em;
+}
+
+#tres div{
+    height: 331px;
+    padding: 1em;
+}
+
+#tres a, #article a{
+    color: black;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0.5em 0.8em;
+    transition: 0.3s;
+    margin-top: 1em;
+}
+
+#tres a:hover, #article a:hover{
+    color: var(--blanco);
+    padding: 0.5em 1.5em;
+    background-color: black;
+}
+
+#tres div:nth-of-type(1){
+    background-image: url(img/jean1.webp);
+    background-size: cover;
+}
+
+#tres div:nth-of-type(2){
+    background-color: var(--rosado-jean);
+    text-align: center;
+    align-content: center;
+}
+
+#tres div:nth-of-type(4){
+    background-color: var(--verde-john);
+    text-align: left;
+    align-content: flex-end;
+}
+
+#tres div:nth-of-type(3){
+    background-image: url(img/jean2.webp);
+    background-size: cover;
+}
+
+#tres div:nth-of-type(5){
+    background-image: url(img/grim2.webp);
+    background-size: cover;
+}
+
+#tres div:nth-of-type(6){
+    background-image: url(img/grim1.webp);
+    background-size: cover;
+}
+
+
+#tres div:nth-of-type(5){
+    display: none;
+}
+
+#articulos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+#cuatro{
+    text-align: center;
+}
+
+#cuatro h1{
+    font-size: 2.5em;
+    margin: 1em 0em;
+}
+article{ 
+    box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.46);
+    border-radius: 10px;
+    padding: 0.8em;
+    position: relative;
+}
+
+article img{
+    width: 100%;
+    margin-bottom: 0.5em;
+    height: 315px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#articulos article:nth-of-type(4) img, #articulos article:nth-of-type(5) img{
+    display: none;
+}
+
+.tag{
+    color: var(--blanco);
+    font-weight: 600;
+    background-color: var(--tag-amarillo);
+    box-shadow: -5px -1px 12px -2px rgba(0,0,0,0.57);
+    border-radius: 5px 0px 0px 5px;
+    display: inline-block;
+    padding: 0.5em 2.5em 0.5em 1em;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    display: none;
+}
+
+#articulos article:nth-of-type(2) .tag{
+    background-color: var(--tag-verde);
+
+}
+#articulos article:nth-of-type(3) .tag{
+    background-color: var(--tag-rosado);
+}
+
+article p{
+    margin-bottom: 1em;
+}
+
+article a{
+    color: black;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0.5em 0.5em;
+    transition: 0.3s;
+}
+
+article a:hover{
+    color: var(--blanco);
+    background-color: black;
+        padding: 0.5em 1.5em;
+}
+
+footer{
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+footer h3{
+    font-family: "Gilda Display", serif;
+}
+
+footer #logoft{
+    width: 80px;
+    margin: 0;
+}
+
+footer img{
+    width: 20px;
+    margin: 0 0.5em;
+    margin-top: 0.8em;
+}
+
+
+@media all and (min-width:768px) {
+    #hambur{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav a{
+        color: var(--blanco);
+        margin: 0 2em;
+        font-size: 1.2em;
+    }
+
+    #portada{
+        text-align: left;
+    }
+
+    #portada h1{
+        font-size: 2.5em;
+    }
+
+    .textos{
+        margin: 3em;
+    }
+
+    form{
+        display: block;
+    }
+
+    div.inputs{
+        max-width: initial;
+    }
+
+    #tres div:nth-of-type(5){
+        display: block;
+    }
+
+    #tres{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #tres div:nth-of-type(2){
+       grid-row: span 2; 
+       height: auto;
+    }
+
+    #tres div:nth-of-type(4){
+        grid-column: span 2;
+    }
+
+    #cuatro{
+        text-align: left;
+    }
+    
+    #articulos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr 1fr 1fr;
+        gap: 1.5em;
+        justify-content: center;
+        }
+        
+
+    #articulos article:nth-of-type(3){
+       
+        grid-row:span 2;
+    }
+
+    footer{
+       display: flex; 
+       justify-content: space-between;
+    }
+
+    footer h3{
+        margin: 0 2em;
+    }
+    
+    #redes{
+        display: flex;
+        align-items: center;
+    }
+
+    footer img{
+    width: 20px;
+    margin: 0 1em;
+    margin-top: 0;
+}
+
+}
+
+@media all and (min-width:1200px) {
+    #hambur{
+        display: none;
+    }
+
+    nav a{
+        transition: 0.3s;
+    }
+
+    nav a:hover{
+        color: rgb(236, 144, 82);
+    }
+
+    #portada{
+        margin-bottom: 5em;
+    }
+
+    #portada h1{
+        font-size: 3em;
+        margin-bottom: 0.2em;
+    }
+
+    #portada h2{
+        margin-bottom: 0.4em;
+    }
+
+    .textos{
+        margin: 4em 10em;
+        width: 54%;
+    }
+
+    .textos p{
+        display: block;
+    }
+
+    #dos{
+        position: absolute;
+        top: 367px;
+        width: 306px;
+        right: 105px;
+    }
+
+    form{
+        font-size: 0.8em;
+    }
+
+    div.inputs{
+        max-width: initial; 
+    }
+
+    form button{
+        width: 100% ;
+    }
+    
+    #tres{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+     #tres div:nth-of-type(3){
+         grid-area: 2 / 1;
+    }
+
+     #articulos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        justify-content: center;
+    }
+
+    #articulos article{
+        width: 31%;
+    }
+
+    #articulos article:nth-of-type(4) img, #articulos article:nth-of-type(5) img{
+        display: block;
+    }
+
+    .tag{
+        display: block;
+    }
+    
+}

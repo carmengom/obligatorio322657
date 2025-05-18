@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBLIGATORIO 1 - 322657</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.webp" alt="Logo" id="logo">
+        </a>
+        <a href="#" id="hambur">
+            <img src="img/menu.webp" alt="Menú">
+        </a>
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#tres">ARTISTAS</a>
+            <a href="#cuatro">OBRAS</a>
+        </nav>
+    </header>
+    <!-- Agregué aria-label y role (en los divs) para la accesibilidad porque al poner la imagen de background-image en el css no me deja utilizar alt. Las imágenes son obras de los artistas, por lo tanto es importante que sean identificadas. De esta manera el lector de pantallas va a poder leerlas.-->
+    <section id="portada" aria-label="Foto de portada: Dame Autumn tiene una cara triste de John Atkinson Grimshaw">
+        <div class="textos">
+            <h1>El Sujeto y la Naturaleza:</h1>
+            <h2>James Jean & John Atkinson Grimshaw</h2>
+            <p>Entre luces y niebla, flora y símbolo, esta exposición reúne la obra de James Jean y John Atkinson Grimshaw en un viaje visual por la relación entre el sujeto y la naturaleza: lo externo como reflejo de lo interno.</p>
+        </div>
+    </section>
+
+    <section id="dos" class="contenedor">
+        <form>
+            <h2>In varius imperdiet <br> <span>augue eget euismod. Curabitur sed ex sed.</span></h2>
+            <div class="inputs">
+                <input type="email" placeholder="Correo electrónico" required>
+                <select required>
+                    <option value="" disabled selected>Selecciona el día</option>
+                    <option value="Lunes 13">Lunes 13</option>
+                    <option value="Martes 14">Martes 14</option>
+                    <option value="Miércoles 15">Miércoles 15</option>
+                    <option value="Jueves 16">Jueves 16</option>
+                    <option value="Viernes 17">Viernes 17</option>
+                </select>
+                <button type="submit">Reservá tu visita</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="tres" class="contenedor">
+            <div aria-label="Singer Songwriter II de James Jean" role="img"></div> 
+            <div>
+                <h2>James Jean (n. 1979)</h2>
+                <p>Artista taiwanés-estadounidense contemporáneo, conocido por sus obras oníricas que combinan lo figurativo, lo simbólico y lo fantástico. Su estilo mezcla influencias del arte oriental, el cómic y el surrealismo.</p>
+                <a href="#cuatro">OBRAS</a>
+            </div>
+            <div aria-label="BOBINA: EL AÑO DE LA SERPIENTE de James Jean" role="img"></div>
+            <div>
+                <h2>John Atkinson Grimshaw (1836–1893)</h2>
+                <p>Pintor británico del siglo XIX, asociado al Romanticismo tardío y al Realismo victoriano. Famoso por sus escenas nocturnas cargadas de atmósfera, luz de luna, niebla y melancolía urbana.
+                </p>
+                <a href="#cuatro">OBRAS</a>
+            </div>
+            <div aria-label="Un carril iluminado por la luna (1874) de John Atkinson Grimshaw" role="img"></div>
+            <div aria-label="Reflejos en el Támesis, Westminster (1880) de John Atkinson Grimshaw" role="img"></div>
+    </section>
+
+    <section id="cuatro" class="contenedor">
+        <h1>Obras</h1>
+        <div id= "articulos">
+        <article>
+            <div class="tag">DESTACADO</div>
+            <img src="img/jean3.webp" alt="Bouquet II de James Jean">
+            <h2>BOUQUET II (2022)</h2>
+            <p>"Bouquet II", de James Jean, retrata a un niño suspendido entre un estallido de flores y formas orgánicas, evocando un mundo onírico donde la inocencia y la naturaleza se funden en una imagen de transformación y belleza efímera.</p>
+            <a href="#">VER MÁS</a>
+        </article>
+        <article>
+            <div class="tag">CLÁSICO</div>
+            <img src="img/grim3.webp" alt="Dame Autumn tiene una cara triste de John Atkinson Grimshaw">
+            <h2>Dame Autumn tiene una cara triste (1871)</h2>
+            <p>La pintura representa una doncella con una expresión seria, posiblemente reflejando la tristeza que suele asociarse con la temporada del otoño.</p>
+            <a href="#">VER MÁS</a>
+        </article>
+        <article>
+            <div class="tag">DIGITAL</div>
+            <img src="img/jean4.webp" alt="Udon de James Jean">
+            <h2>Udon (2018)</h2>
+            <p>La pintura Udon es parte de una serie en la que Jean explora temas de consumo y transformación. En este trabajo, la idea de comer se convierte en algo casi espiritual, difuminando las fronteras entre el yo y el entorno.</p>
+            <a href="#">VER MÁS</a>
+        </article>
+        <article>
+            <img src="img/grim1.webp" alt="Reflejos en el Támesis, Westminster (1880) de John Atkinson Grimshaw">
+            <h2>Reflejos en el Támesis, Westminster (1880)</h2>
+            <p>"Reflejos en el Támesis, Westminster" es una obra que celebra la belleza de la noche, con la luz de la luna reflejándose en el río y las personas paseando por la zona de Westminster, transmitiendo una sensación de calma y lirismo. </p>
+            <a href="#">VER MÁS</a>
+        </article>
+        <article>
+            <img src="img/jean1.webp" alt="SINGER SONGWRITER II de James Jean">
+            <h2>SINGER SONGWRITER II</h2>
+            <p>En Singer-Songwriter II, se representa una fusión íntima entre el sujeto y la naturaleza, donde formas orgánicas brotan y envuelven al personaje como si fueran una extensión de su cuerpo o mente. Esta conexión simbólica sugiere que la identidad humana es maleable y profundamente entrelazada con el entorno natural, evocando un estado de transformación constante entre lo interior y lo exterior.</p>
+            <a href="#">VER MÁS</a>
+        </article>
+    </div>
+
+    </section>
+    <footer>
+        <img src="img/logo.webp" alt="Logo" id="logoft">
+        <div id="redes">
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/instagram.webp" alt="Ícono Instagram"></a>
+        <a href="#"><img src="img/x.webp" alt="Ícono Twitter"></a>
+        <a href="#"><img src="img/whatsapp.webp" alt="Ícono Whatsapp"></a>        
+        </div>
+    </footer>
+</body>
+
+</html>
